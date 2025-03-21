@@ -1,28 +1,35 @@
-/* Use this file to use your own styles*/
+@charset "utf-8";
+/* CSS Document */
 
 /* Import declaration to use Google Fonts - check https://fonts.google.com/ for details */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 /* Styles for the body */
 
 body {
-	font-family: Lato, "Open Sans", Roboto, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #202030;
-	background-color: #f8f8fc;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
+h1, h5, h2, h6 {
+  color: #FFFFFF; /* Orange-red */
+}
+        h2, .skill-list .skill-item {
+            color: white; /* White text for h2 and list items */
+        }
 /* Styles for custom classes in the document. (There are more, try to find them out!) */
 
 .resume-header {
-    background-color: #e0f0ff;
+    background-color:#065143;
 }
 
 .resume-main {
-	background-color: #fffefc;
+	background-color: #E6F5E9;
 }
 
 .resume-aside {
-	background-color: #fff0e0;
+	background-color: #A4C2A5;
 }
 
 /* Styles for lists in the document */
@@ -36,7 +43,7 @@ body {
 }
 
 .biography-details li::before {
-	color: #EE7623;
+	color: #065143;
 }
 
 .biography-details li, .skill-list li {
@@ -49,3 +56,22 @@ body {
 	height: 1em;
 	flex-basis: 1.4em;
 }
+
+.languages-style {
+	background-color: #065143;
+}
+
+.languages-border {
+	border-style: solid;
+	border-color: #000000;
+}
+
+<ul class="list-unstyled">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+
+<style>
+    .custom-list li::marker {
+        color: black; /* Change bullet color to blac
